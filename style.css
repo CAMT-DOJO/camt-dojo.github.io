@@ -39,3 +39,12 @@ html{scroll-padding-top:calc(var(--header-height,94px) + 12px);}
 .belt.is-flipped .belt-inner{transform:rotateY(180deg);}
 .belt:focus-visible{outline:3px solid #98782e;outline-offset:4px;}
 @media(prefers-reduced-motion:reduce){.belt-inner{transition:none;}}
+
+/* v2.1: aligned home captions and atmospheric hero */
+.cards .card-overlay{min-height:155px;display:flex;flex-direction:column;justify-content:flex-start;padding-top:45px;}
+.cards .card-overlay h3{min-height:2.4em;display:flex;align-items:flex-end;}
+.hero{position:relative;isolation:isolate;background:linear-gradient(to bottom,rgba(9,9,9,.42),rgba(9,9,9,.48) 60%,#090909 100%),radial-gradient(ellipse at center,transparent 25%,rgba(9,9,9,.8) 100%),url("assets/home-group.jpg") center / cover no-repeat;background-color:#090909;}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 25% 30%,rgba(170,170,170,.14),transparent 55%),radial-gradient(ellipse at 75% 65%,rgba(150,150,150,.12),transparent 50%);}
+@media(max-width:650px){.hero{background-size:auto,auto,100% auto;}.cards .card-overlay{min-height:155px;padding-top:35px;}}
+
+.instagram-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}.instagram-logo{display:block;width:100px;height:100px;object-fit:contain;transition:transform .25s ease}.instagram-strip .instagram-logo{width:64px;height:64px}.social-grid .instagram-logo{width:min(220px,100%);height:220px}.bio-page .instagram-logo{border-radius:0;margin:auto}.help .instagram-logo{width:44px;height:44px}.instagram-link:focus-visible{outline:2px solid var(--gold);outline-offset:4px}@media(hover:hover){.instagram-link:hover .instagram-logo{transform:scale(1.07)}}@media(prefers-reduced-motion:reduce){.instagram-logo{transition:none}.instagram-link:hover .instagram-logo{transform:none}}
