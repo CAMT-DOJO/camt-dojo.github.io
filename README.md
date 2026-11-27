@@ -11,3 +11,6 @@ Version 1.1: enhanced contrast on original portraits; generated illustrative doj
 
 ## v1.3 configuration
 Set instagram, substack and email in config.js. For Google Calendar, set public calendarId and a browser API key restricted to the Calendar API and your website referrer. Until then events are empty; optional local events use {id,title,start,end,description,location}, with ISO timestamps including offsets or YYYY-MM-DD all-day dates (exclusive end). Help bubble is a contact panel, not a chatbot. Upload all extracted files including links/ and assets/.
+
+## v1.6
+Dojo storefront hero is an approved AI-assisted reconstruction of the supplied photo. Address added; Saturday event hours are not confirmed as regular hours. Instagram configured to @camt_pty.
